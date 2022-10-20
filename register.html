@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/libbg.webp);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            width:100vw;
+            margin:0px;
+        }
+        .me{
+            border-radius: 8px;
+            border:1px solid rgb(255, 145, 0);
+        }
+        .me:hover{
+            border: 3px solid rgb(255, 145, 0);
+        }
+        #sub_btn{
+            background-color: rgb(255, 145, 0);
+           color: white;
+           border: 1px solid rgb(255, 145, 0);
+        }
+        #new{
+            background-color: rgb(255, 145, 0);
+        }
+        .n{
+            color:#fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mb-5">
+        <h3 class="mb-3 n">Sign Up</h3>
+        <input type="text" placeholder="Fullname" id="nameInp" class="form-control mb-3 me">
+        <input type="text" placeholder="Email" id="emailInp" class="form-control mb-3 me">
+        <input type="text" placeholder="Username" id="userInp" class="form-control mb-3 me">
+        <input type="password" placeholder="Password" id="passInp" class="form-control mb-3 me">
+    
+        <button type="text" id="sub_btn" class="btn btn-outline-primary mb-3 w-100">Sign Up</button>
+        <a id="new"href="login.html" class="badge badge-secondary py-1 w-100">Already Have an Account</a>
+    </div>
+</body>
+</html>
